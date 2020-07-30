@@ -1,0 +1,17 @@
+{
+  "1": {
+    "name": "Catto",
+    "description": "Regular cat",
+    "id": 1
+  },
+  "2": {
+    "name": "Choncker",
+    "description": "Big catto",
+    "id": 2
+  },
+  "3": {
+    "name": "Fluff ball",
+    "description": "Tiny cat",
+    "id": 3
+  }
+}

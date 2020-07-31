@@ -37,6 +37,17 @@ const catRoutes = (app, fs) => {
         });
     });
 
+     // READ BY ID
+     app.get('/cats/:id', (req, res) => {
+        fs.readFile(dataPath, 'utf8', (err, data) => {
+            const catId = req.params["id"];
+            if (err) {
+                throw err;
+            }
+            res.send(Object.values(JSON.parse(data)).find(cat => cat.id == catId));
+        });
+    });
+
     // CREATE
     app.post('/cats', (req, res) => {
 
